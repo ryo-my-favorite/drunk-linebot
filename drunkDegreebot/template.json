@@ -1,0 +1,39 @@
+{
+    "start":{
+        "type": "template",
+        "altText": "問題",
+        "template": {
+            "type": "buttons",
+            "text": "「152 + 254 = ？」 答えはどれ！？",
+            "actions": [
+                {
+                    "type": "postback",
+                    "label": "306",
+                    "data": "ans=false"
+                },
+                {
+                    "type": "postback",
+                    "label": "307",
+                    "data": "ans=false"
+                },
+                {
+                    "type": "postback",
+                    "label": "406",
+                    "data": "ans=true"
+                }
+            ]
+        }
+    },
+    "correctAns": {
+        "type": "text",
+        "text": "正解！まだ飲める"
+    },
+    "wrongAns": {
+        "type": "text",
+        "text": "不正解！水を飲もう"
+    },
+    "errorMsg": {
+        "type": "text",
+        "text": "想定外の事態だ。開発者に連絡しよう"
+    }
+}
